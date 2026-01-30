@@ -42,6 +42,5 @@ echo "  clab deploy -t topology.yml    # Deploy a topology"
 echo "  clab inspect                   # Inspect running labs"
 echo "  clab destroy -t topology.yml   # Destroy a topology"
 echo ""
-EOF
 
 chmod +x .devcontainer/setup-containerlab.sh
