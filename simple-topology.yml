@@ -1,0 +1,29 @@
+name: simple-lab
+
+topology:
+  nodes:
+    # Alpine Linux nodes for basic testing
+    node1:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 10.0.0.1/24 dev eth1
+        - ip link set eth1 up
+    
+    node2:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 10.0.0.2/24 dev eth1
+        - ip link set eth1 up
+
+  links:
+    - endpoints: ["node1:eth1", "node2:eth1"]
+
+# This is a simple 2-node topology using Alpine Linux containers
+# Perfect for testing your containerlab setup!
+#
+# Deploy with: clab deploy -t simple-topology.yml
+# Inspect with: clab inspect
+# Connect to nodes: docker exec -it clab-simple-lab-node1 sh
+# Destroy with: clab destroy -t simple-topology.yml

@@ -1,0 +1,44 @@
+# Containerlab generated files
+clab-*/
+*.log
+graph/
+
+# Docker artifacts
+*.tar
+*.qcow2
+
+# Sensitive files
+.env
+*-secrets.yml
+*-secret.yml
+credentials.txt
+passwords.txt
+*.key
+*.pem
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+
+# Logs
+logs/
+*.log
+
+# Backup files
+*.bak
+*.backup
