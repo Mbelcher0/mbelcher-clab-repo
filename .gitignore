@@ -42,3 +42,6 @@ logs/
 # Backup files
 *.bak
 *.backup
+
+# Claude Code extension
+.claude/
